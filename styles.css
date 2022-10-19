@@ -99,12 +99,21 @@ main {
   gap: 0.75rem;
   cursor: pointer;
   outline: none;
+  padding-left: 3rem;
 }
 
 .text button:hover {
   background-color: var(--very-dark-blue);
 }
-
+.button{
+    position: relative;
+}
+embed{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 376px) {
   main {
     flex-direction: column;

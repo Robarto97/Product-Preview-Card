@@ -34,9 +34,7 @@ main {
 .img-wrapper {
   width: 50%;
 }
-.mobile-img {
-  display: none !important;
-}
+
 .img-wrapper img {
   width: 100%;
   display: block;
@@ -125,11 +123,5 @@ embed {
   }
   .text {
     width: 100%;
-  }
-  .mobile-img {
-    display: block !important;
-  }
-  .desktop-img {
-    display: none !important;
   }
 }

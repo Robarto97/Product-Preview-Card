@@ -18,7 +18,14 @@
   <body>
     <main>
       <div class="img-wrapper">
-        <img
+        <picture>
+          <source
+            media="(min-width:376px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <img src="images/image-product-mobile.jpg" alt="image" />
+        </picture>
+        <!-- <img
           class="desktop-img"
           src="images/image-product-desktop.jpg"
           alt="image"
@@ -27,7 +34,7 @@
           class="mobile-img"
           src="images/image-product-mobile.jpg"
           alt="image"
-        />
+        /> -->
       </div>
       <div class="text">
         <h3>Perfume</h3>

@@ -105,14 +105,14 @@ main {
 .text button:hover {
   background-color: var(--very-dark-blue);
 }
-.button{
-    position: relative;
+.button {
+  position: relative;
 }
-embed{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+embed {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 @media screen and (max-width: 376px) {
   main {
@@ -126,10 +126,10 @@ embed{
   .text {
     width: 100%;
   }
-  .mobile-img{
+  .mobile-img {
     display: block !important;
   }
-  .desktop-img{
+  .desktop-img {
     display: none !important;
   }
 }

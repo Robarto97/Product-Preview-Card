@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin: auto;
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-wrapper {
+  width: 50%;
+}
+.mobile-img {
+  display: none !important;
+}
+.img-wrapper img {
+  width: 100%;
+  display: block;
+}
+.text {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 1rem 1.5rem;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 0.75rem;
+  color: var(--dark-grayish-blue);
+}
+
+.text h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 0.9;
+}
+
+.text p {
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.text .spans {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.text span:first-of-type {
+  color: var(--dark-cyan);
+  font-size: 1.75rem;
+  font-family: "Fraunces", serif;
+  margin-right: 1rem;
+}
+
+.text span:nth-of-type(2) {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 0.75rem;
+}
+.text button {
+  width: 100%;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.text button:hover {
+  background-color: var(--very-dark-blue);
+}
+
+@media screen and (max-width: 376px) {
+  main {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .img-wrapper {
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .mobile-img{
+    display: block !important;
+  }
+  .desktop-img{
+    display: none !important;
+  }
+}
